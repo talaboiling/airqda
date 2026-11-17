@@ -1,0 +1,224 @@
+{
+  "before": {
+    "rows": 420768,
+    "columns": 18,
+    "stations": [
+      "Aotizhongxin",
+      "Changping",
+      "Dingling",
+      "Dongsi",
+      "Guanyuan",
+      "Gucheng",
+      "Huairou",
+      "Nongzhanguan",
+      "Shunyi",
+      "Tiantan",
+      "Wanliu",
+      "Wanshouxigong"
+    ],
+    "dtypes": {
+      "No": "int32",
+      "year": "int16",
+      "month": "int8",
+      "day": "int8",
+      "hour": "int8",
+      "PM2.5": "float32",
+      "PM10": "float32",
+      "SO2": "float32",
+      "NO2": "float32",
+      "CO": "float32",
+      "O3": "float32",
+      "TEMP": "float32",
+      "PRES": "float32",
+      "DEWP": "float32",
+      "RAIN": "float32",
+      "wd": "category",
+      "WSPM": "float32",
+      "station": "category"
+    },
+    "feature_types": {
+      "numeric_continuous": [
+        "PM2.5",
+        "PM10",
+        "SO2",
+        "NO2",
+        "CO",
+        "O3",
+        "TEMP",
+        "PRES",
+        "DEWP",
+        "RAIN",
+        "WSPM"
+      ],
+      "categorical": [
+        "station",
+        "wd"
+      ],
+      "temporal": [
+        "year",
+        "month",
+        "day",
+        "hour"
+      ]
+    },
+    "missing": {
+      "PM2.5": {
+        "count": 8739,
+        "pct": 2.08
+      },
+      "PM10": {
+        "count": 6449,
+        "pct": 1.53
+      },
+      "SO2": {
+        "count": 9021,
+        "pct": 2.14
+      },
+      "NO2": {
+        "count": 12116,
+        "pct": 2.88
+      },
+      "CO": {
+        "count": 20701,
+        "pct": 4.92
+      },
+      "O3": {
+        "count": 13277,
+        "pct": 3.16
+      },
+      "TEMP": {
+        "count": 398,
+        "pct": 0.09
+      },
+      "PRES": {
+        "count": 393,
+        "pct": 0.09
+      },
+      "DEWP": {
+        "count": 403,
+        "pct": 0.1
+      },
+      "RAIN": {
+        "count": 390,
+        "pct": 0.09
+      },
+      "wd": {
+        "count": 1822,
+        "pct": 0.43
+      },
+      "WSPM": {
+        "count": 318,
+        "pct": 0.08
+      }
+    },
+    "duplicates_full_rows": 0,
+    "duplicates_station_time": 0,
+    "outliers_iqr": {
+      "PM2.5": {
+        "lower": -116.5,
+        "upper": 247.5,
+        "count": 19142,
+        "pct": 4.65,
+        "min": 2.0,
+        "max": 999.0
+      },
+      "PM10": {
+        "lower": -127.5,
+        "upper": 308.5,
+        "count": 14658,
+        "pct": 3.54,
+        "min": 2.0,
+        "max": 999.0
+      },
+      "SO2": {
+        "lower": -22.5,
+        "upper": 45.5,
+        "count": 35566,
+        "pct": 8.64,
+        "min": 0.2856000065803528,
+        "max": 500.0
+      },
+      "NO2": {
+        "lower": -49.0,
+        "upper": 143.0,
+        "count": 7021,
+        "pct": 1.72,
+        "min": 1.0264999866485596,
+        "max": 290.0
+      },
+      "CO": {
+        "lower": -1000.0,
+        "upper": 3000.0,
+        "count": 28054,
+        "pct": 7.01,
+        "min": 100.0,
+        "max": 10000.0
+      },
+      "O3": {
+        "lower": -95.5,
+        "upper": 188.5,
+        "count": 16599,
+        "pct": 4.07,
+        "min": 0.2142000049352646,
+        "max": 1071.0
+      },
+      "TEMP": {
+        "lower": -27.2,
+        "upper": 53.6,
+        "count": 0,
+        "pct": 0.0,
+        "min": -19.899999618530273,
+        "max": 41.599998474121094
+      },
+      "PRES": {
+        "lower": 977.25,
+        "upper": 1044.05,
+        "count": 0,
+        "pct": 0.0,
+        "min": 982.4000244140625,
+        "max": 1042.800048828125
+      },
+      "DEWP": {
+        "lower": -44.9,
+        "upper": 51.1,
+        "count": 0,
+        "pct": 0.0,
+        "min": -43.400001525878906,
+        "max": 29.100000381469727
+      },
+      "RAIN": {
+        "lower": 0.0,
+        "upper": 0.0,
+        "count": 16520,
+        "pct": 3.93,
+        "min": 0.0,
+        "max": 72.5
+      },
+      "WSPM": {
+        "lower": -1.05,
+        "upper": 4.15,
+        "count": 23079,
+        "pct": 5.49,
+        "min": 0.0,
+        "max": 13.199999809265137
+      }
+    },
+    "negative_values": {}
+  },
+  "after_cleaning_missing": {
+    "PM2.5": 3354,
+    "PM10": 2294,
+    "SO2": 3896,
+    "NO2": 5533,
+    "CO": 11991,
+    "O3": 5446,
+    "TEMP": 1,
+    "PRES": 1,
+    "DEWP": 1,
+    "RAIN": 0,
+    "WSPM": 0,
+    "wd": 8
+  },
+  "rows_after": 420768,
+  "rule_interpolation_max_gap_h": 6
+}

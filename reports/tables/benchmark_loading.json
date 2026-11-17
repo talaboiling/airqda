@@ -1,0 +1,29 @@
+{
+  "n_files": 12,
+  "csv_total_size_mb": 31.0,
+  "csv_default_dtypes": {
+    "time_s": 0.7812,
+    "peak_mem_mb": 102.98
+  },
+  "rows": 420768,
+  "mem_default_mb": 62.1,
+  "csv_chunked_optimized": {
+    "time_s": 1.2949,
+    "peak_mem_mb": 50.48
+  },
+  "mem_optimized_mb": 22.07,
+  "mem_reduction_pct": 64.5,
+  "parquet_write": {
+    "time_s": 0.2789,
+    "peak_mem_mb": 0.88
+  },
+  "parquet_size_mb": 5.87,
+  "parquet_read": {
+    "time_s": 0.069,
+    "peak_mem_mb": 6.0
+  },
+  "parquet_read_2cols": {
+    "time_s": 0.0129,
+    "peak_mem_mb": 0.64
+  }
+}

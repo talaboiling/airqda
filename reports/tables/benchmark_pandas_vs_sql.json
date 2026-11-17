@@ -1,0 +1,8 @@
+{
+  "pandas_groupby_s": 0.0336,
+  "sqlite_groupby_s": 0.2682,
+  "sqlite_full_read_s": 2.4196,
+  "parquet_full_read_s": 0.0409,
+  "max_abs_diff": 1.0697118199232136e-05,
+  "groups": 576
+}

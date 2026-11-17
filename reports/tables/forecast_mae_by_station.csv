@@ -1,0 +1,13 @@
+station,Naive (y[t-1]),Seasonal naive (y[t-7]),Moving average (7 days),Linear Regression (lags + weather t-1),Gradient Boosting (extension)
+Aotizhongxin,46.13,70.32,54.74,39.99,38.01
+Changping,38.25,60.33,46.46,33.52,30.87
+Dingling,39.15,59.61,45.92,34.01,32.33
+Dongsi,48.18,76.98,59.49,43.41,41.4
+Guanyuan,45.74,73.01,56.0,40.49,38.76
+Gucheng,47.01,72.78,56.97,41.63,38.73
+Huairou,39.32,59.98,46.33,32.93,32.17
+Nongzhanguan,46.85,73.16,56.77,41.88,39.01
+Shunyi,45.51,70.43,54.22,39.07,38.44
+Tiantan,44.27,69.51,53.84,39.72,38.48
+Wanliu,44.17,68.79,53.17,39.78,38.19
+Wanshouxigong,46.22,74.17,57.31,41.68,40.75

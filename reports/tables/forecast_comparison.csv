@@ -1,0 +1,6 @@
+approach,type,MAE,RMSE,time_s,peak_mem_mb,skill_vs_naive_%
+Naive (y[t-1]),baseline,44.23,65.82,0.0,0.0,0.0
+Seasonal naive (y[t-7]),baseline,69.08,100.92,0.0,0.0,-56.2
+Moving average (7 days),simple,53.43,73.92,0.0,0.0,-20.8
+Linear Regression (lags + weather t-1),model,39.01,56.39,0.026,5.51,11.8
+Gradient Boosting (extension),model,37.26,55.41,2.502,10.51,15.8

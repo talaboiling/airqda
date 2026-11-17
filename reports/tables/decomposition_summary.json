@@ -1,0 +1,23 @@
+{
+  "monthly_period12": {
+    "period": 12,
+    "seasonal_strength": 0.4,
+    "seasonal_amplitude": 45.65,
+    "trend_start": 87.14,
+    "trend_end": 76.67
+  },
+  "daily_period7": {
+    "period": 7,
+    "seasonal_strength": 0.007,
+    "seasonal_amplitude": 14.58,
+    "trend_start": 102.22,
+    "trend_end": 34.75
+  },
+  "hourly_period24": {
+    "period": 24,
+    "seasonal_strength": 0.041,
+    "seasonal_amplitude": 15.67,
+    "trend_start": 7.43,
+    "trend_end": 15.89
+  }
+}

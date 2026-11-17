@@ -1,0 +1,38 @@
+digraph ER {
+  graph [rankdir=LR, fontname="Helvetica", bgcolor="white", pad=0.3];
+  node  [shape=plain, fontname="Helvetica", fontsize=11];
+  edge  [arrowhead=crow, arrowtail=tee, dir=both, color="#555555"];
+  districts [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5">
+    <TR><TD BGCOLOR="#2F5597"><FONT COLOR="white"><B>districts</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">PK district_id INTEGER</TD></TR>
+    <TR><TD ALIGN="LEFT">district_name TEXT</TD></TR>
+    <TR><TD ALIGN="LEFT">area_type TEXT</TD></TR></TABLE>>];
+  stations [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5">
+    <TR><TD BGCOLOR="#2F5597"><FONT COLOR="white"><B>stations</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">PK station_id INTEGER</TD></TR>
+    <TR><TD ALIGN="LEFT">station_name TEXT</TD></TR>
+    <TR><TD ALIGN="LEFT">FK district_id INTEGER</TD></TR></TABLE>>];
+  wind_directions [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5">
+    <TR><TD BGCOLOR="#2F5597"><FONT COLOR="white"><B>wind_directions</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">PK wd_id INTEGER</TD></TR>
+    <TR><TD ALIGN="LEFT">wd_code TEXT</TD></TR>
+    <TR><TD ALIGN="LEFT">degrees REAL</TD></TR></TABLE>>];
+  seasons [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5">
+    <TR><TD BGCOLOR="#2F5597"><FONT COLOR="white"><B>seasons</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">PK month INTEGER</TD></TR>
+    <TR><TD ALIGN="LEFT">season TEXT</TD></TR></TABLE>>];
+  measurements [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="5">
+    <TR><TD BGCOLOR="#C55A11"><FONT COLOR="white"><B>measurements</B></FONT></TD></TR>
+    <TR><TD ALIGN="LEFT">PK measurement_id INTEGER</TD></TR>
+    <TR><TD ALIGN="LEFT">FK station_id INTEGER</TD></TR>
+    <TR><TD ALIGN="LEFT">ts TEXT, date TEXT</TD></TR>
+    <TR><TD ALIGN="LEFT">year, FK month, day, hour INTEGER</TD></TR>
+    <TR><TD ALIGN="LEFT">pm25, pm10, so2, no2, co, o3 REAL</TD></TR>
+    <TR><TD ALIGN="LEFT">temp, pres, dewp, rain, wspm REAL</TD></TR>
+    <TR><TD ALIGN="LEFT">FK wd_id INTEGER</TD></TR>
+    <TR><TD ALIGN="LEFT">pm25_outlier INTEGER</TD></TR></TABLE>>];
+  districts -> stations [label=" 1:N "];
+  stations -> measurements [label=" 1:N "];
+  wind_directions -> measurements [label=" 1:N "];
+  seasons -> measurements [label=" 1:N "];
+}

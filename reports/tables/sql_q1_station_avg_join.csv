@@ -1,0 +1,13 @@
+station_name,district_name,area_type,avg_pm25,avg_pm10,avg_no2,n_hours
+Dongsi,Dongcheng,urban,86.1,110.5,53.6,35064
+Nongzhanguan,Chaoyang,urban,85.1,109.5,58.2,35064
+Wanshouxigong,Xicheng,urban,85.0,112.5,55.5,35064
+Gucheng,Shijingshan,urban,84.0,119.2,55.9,35064
+Wanliu,Haidian,urban,83.4,110.7,65.3,35064
+Guanyuan,Xicheng,urban,83.0,109.2,58.0,35064
+Aotizhongxin,Chaoyang,urban,82.9,110.2,59.3,35064
+Tiantan,Dongcheng,urban,82.0,106.6,53.2,35064
+Shunyi,Shunyi,suburban,79.7,99.2,43.8,35064
+Changping,Changping,suburban,71.2,94.9,44.2,35064
+Huairou,Huairou,suburban,69.6,91.8,32.1,35064
+Dingling,Changping,suburban,66.3,84.0,27.4,35064
